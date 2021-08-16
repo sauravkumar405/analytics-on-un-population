@@ -15,7 +15,11 @@ def function(DataSet):
              "Myanmar", "Philippines", "Singapore", "Thailand", "Vietnam"]
     years = ['2004', '2007', '2010', '2013']
     width_of_bar = 0.1
+    
+    # Creating an empty dictionary to keep track of each years population data
     years_hashmap = {}
+        
+    # Iterating through the Dataset
     for entry in DataSet:
         if entry['Year'] in years and entry['Region'] in asean:
             if entry['Region'] in years_hashmap.keys():
